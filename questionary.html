@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>АНКЕТА</title>
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="menu">
+        <a href="index.html">
+          <div class="logo"></div>
+        </a>
+        <div class="nav">
+          <div class="nav-item">
+            <a href="index.html#who">ХТО МИ Є?</a>
+          </div>
+          <div class="nav-item">
+            <a href="index.html#benefits">ПЕРЕВАГИ</a>
+          </div>
+          <div class="nav-item">
+            <a href="index.html#experience">НАШ ДОСВІД</a>
+          </div>
+          <div class="nav-item">
+            <a href="index.html#tarifs">ВСТУПИТИ</a>
+          </div>
+          <div class="nav-item">
+            <a href="#contacts">КОНТАКТИ</a>
+          </div>
+        </div>
+        <div class="mob-menu">
+          <div class="burger"></div>
+          <ul class="menuMob">
+            <li>
+              <a href="questionary.html">Заповнити анкету</a>
+            </li>
+            <li>
+              <a href="tarifs.html">Долучитися</a>
+            </li>
+            <li>
+              <a href="index.html#questions">Поширені питання</a>
+            </li>
+          </ul>
+        </div>
+        <div class="lang">РУС</div>
+      </div>
+    </div>
+  </header>
+  <section class="questionary-title header-mt">
+    <div class="container">
+      <div class="title">Заповнити анкету</div>
+      <div class="desk">Адвокати, юристи, журналісти та громадські діячі ВП «Землевласники» допомагають громадянам України
+        <br />реалізувати право на безоплатне отримання із земель державної та комунальної власності для цього потрібно заповнити
+        анкету. Ми зв'яжемося з вами протягом 3-х днів, щоб оформити інші документи. </div>
+      <div class="mob">Ми розглянемо анкету та зв'яжемося з Вами протягом 3-х днів, щоб оформити інші документи. </div>
+    </div>
+  </section>
+  <section class="questionary">
+    <div class="container">
+      <div class="questionary__form">
+        <div class="flex-row">
+          <div class="questionary__form-inputs">
+            <div class="questionary-message" id="message">Вам було відправлено смс</div>
+            <div class="input-button__container">
+              <input id="telephone" class="input" type="text" placeholder="Телефон">
+              <button id="sendSmsBtn" class="input-button">Надіслати смс</button>
+            </div>
+
+
+            <div class="input-button__container">
+              <input id="sms" class="input" type="text" placeholder="Код з смс" disabled>
+              <button id="checkSms" class="input-button" disabled>Перевірити</button>
+            </div>
+
+
+            <input id="fullName" class="input" type="text" placeholder="ПІБ" disabled>
+
+            <input id="email" class="input" type="text" placeholder="email" disabled>
+            <input id="region" class="input" type="text" placeholder="Область" disabled>
+            <input id="city" class="input" type="text" placeholder="Місто" disabled>
+            <input id="regionLand" class="input" type="text" placeholder="Регіон,де отримали ділянку" disabled>
+            <div class="text">Чи отримували рішення про надання згоди на розробку документації із землеустрою: </div>
+            <div class="text">Чи отримували рішення щодо затвердження документації із землеустрою та надання земельних ділянок у власність
+              чи користування:</div>
+          </div>
+          <div class="questionary__form-text">
+            <div class="questionary__form-text-desk">Інформуємо учасників щодо їх земельних прав наданих законодавством України.
+              <br /> Навчаємо, як скористатися цими правами. Надаємо консультації відносно конкретних ситуацій.
+            </div>
+            <div class="text">Вкажіть регіон, де отримували земельну ділянку (якщо потрібно)</div>
+            <div class="questionary__form-text-check-mob">Чи отримували рішення про надання згоди на розробку документації із землеустрою: </div>
+            <div class="questionary__form-text-check">
+
+              <label class="container__checkbox">Ні
+                <input type="radio" name="consentDoc" value="false" checked>
+                <span class="checkmark"></span>
+              </label>
+              <label class="container__checkbox">Так
+                <input type="radio" name="consentDoc" value="true">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="questionary__form-text-check-mob">Чи отримували рішення щодо затвердження документації із землеустрою та надання земельних ділянок у власність
+              чи користування: </div>
+            <div class="questionary__form-text-check bottom">
+
+
+              <label class="container__checkbox">Ні
+                <input type="radio" name="approvalDoc" value="false" checked>
+                <span class="checkmark"></span>
+              </label>
+              <label class="container__checkbox">Так
+                <input type="radio" name="approvalDoc" value="true">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+          </div>
+        </div>
+        <textarea id="textareaQuestion" class="textarea" placeholder="Ваше питання.." disabled></textarea>
+        <div>
+          <label class="container__checkbox small">Я згоден з умовами конфіденційності і дозволю використовувати мої персональні дані на законних засадах.
+            <input id="agree" type="checkbox" checked disabled>
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="format">
+          <!--
+                    <div class="title">Оберіть ваш формат співпраці</div>
+                    <div class="subtitle">Для початку роботи оберіть план підписки на рік.
+                        <br/> Ви маєте змогу сплатити внесок одразу або після обробки Вашої анкети. </div>
+
+                    <div class="format__cards"> -->
+          <!-- <div id="freeLand" class="card selected">
+                            <div class="title">Правова допомога
+                                <br/>в отриманні безкоштовної землі</div>
+                            <div class="cost">
+                                <b>2500</b> грн/рік
+                            </div>
+                            <a href="/tarifs.html" class="more">Докладніше...</a>
+                        </div>
+                        <div id="disputLand" class="card">
+                            <div class="title">Правова допомога
+                                <br/> в вирішенні земельних спорів</div>
+                            <div class="cost">
+                                <b>2000</b> грн/рік
+                            </div>
+                            <a href="/tarifs.html" class="more">Докладніше...</a>
+                        </div> -->
+          <!-- </div> -->
+        </div>
+        <div class="btn__container">
+          <button id="payBtn" class="button" disabled>Вступити</button>
+
+        </div>
+        <div class="questionary__payCheck">
+          <label class="container__checkbox payCheck">Сплатити одразу
+            <input id="payLater" type="checkbox" name="checkedPay" value="checked" checked>
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <a name="contacts"></a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container relative">
+      <div class="right__block">
+        <div class="green-line"></div>
+        <div class="icon-insta"></div>
+        <div class="icon-fb"></div>
+        <div class="icon-youtube"></div>
+      </div>
+      <div class="title">ЛИШИЛИСЬ ПИТАННЯ?</div>
+
+      <div class="footer__block">
+        <div class="form">
+          <div class="form__inputs">
+            <input id="questions-fullName" class="input" type="text" placeholder="ПІБ">
+            <input id="questions-phone" class="input" type="text" placeholder="Телефон">
+            <input id="questions-email" class="input" type="text" placeholder="email">
+            <input id="questions-note" class="input" type="text" placeholder="Ваше питання:">
+          </div>
+
+          <div class="btn__container-mob">
+            <div class="footer-question-message-mob">Ваше питання було надіслане</div>
+
+            <button id="questions-send" class="button">запитати</button>
+          </div>
+
+          <div class="form__texts">
+            <div class="text desk">Якщо маєте запитання, пропозиції або зауваження – скористайтеся формою зворотнього зв’язку.
+            </div>
+            <div class="text-icons" style="display:none">Напишіть у зручний для вас месенджер:</div>
+            <div class="social-icons">
+              <div class="icon1"></div>
+              <div class="icon2"></div>
+            </div>
+            <div class="text-icons">Або зателефонуйте до контакт-центру:</div>
+            <div class="text mob">0-800-750-708</div>
+            <div class="text work">Пн-пт, 9:00 — 18:00</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer__img">
+      <div class="footer__block">
+        <div class="footer-question-message-desk">Ваше питання було надіслане</div>
+        <div class="flex-row">
+
+          <div class="btn__container">
+            <button id="questions-send-desk" class="button">запитати</button>
+          </div>
+
+          <div class="logo">
+            <div class="logo-img"></div>
+          </div>
+          <div class="social-icons-mob">
+            <div class="icon-insta"></div>
+            <div class="icon-fb"></div>
+            <div class="icon-yt"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div>Право на землю © 2020</div>
+          <div>
+            <a href="./denial-of-responsibility.pdf" target="_blank">Відмова від відповідальності</a>
+          </div>
+          <div>
+            <a href="#">Політика конфіденцільності</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/questionary.js"></script>
+
+</body>
+
+</html>
